@@ -1,0 +1,11 @@
+<h1>Effingham Railroad Online Resumes</h1>
+<h2>Check out our SUPER AWESOME COHORT!</h2>
+
+<% @students.each do |student| %>
+  <h4><%= link_to "#{student.full_name}", "/students/#{student["id"]}" %></h4>
+  <p>Phone Number: <%= student["phone_number"] %></p>
+  <p>Email: <%= student["email"] %></p>
+  <p>Online Resume: <%= student["online_resume_url"] %></p>
+
+<% end %>
+

@@ -1,0 +1,51 @@
+<h1><%= @student["first_name"] %> <%= @student["last_name"] %>Online Resume</h1>
+<img src "<%= @student["photo"] %>" class="top-right">
+<h4><%= @student["phone_number"] %></h4>
+<h4><%= @student["email"] %></h4>
+<p><%= @student["short_bio"] %></p>
+
+<h4>Projects and Web Prescence<h4>
+<ul>
+  <li><a href="<%= @student["blog_url"] %>">Website</a></li>
+  <li><a href="<%= @student["online_resume_url"%>">Resume</a></li>
+  <li><a href="<%= @student["github_url"] %>">Github</a></li>
+  <li><a href="<%=  @student["linkedin_url"] %>">LinkedIn</a></li>
+  <li><a href="<%= @student["twitter_handle"] %>">Twitter</a></li>
+</ul>
+
+<h3>Experience<h3>
+<% @experiences.each do |experience| %>
+  <h4><%= experience["company"] %></h4>
+  <h4><%= experience["job_title"] %></h4>
+  <p><%= experience["start_date"] %> - <%= experience["end_date"] %></p>
+  <p><%= experience["details"] %></p>
+<% end %>
+
+<h3>Education</h3>
+<% @educations.each do |education| %>
+  <h4><%= education["university_name"] %></h4>
+  <h4><%= education["degree"] %></h4>
+  <p><%= education["start_date"] %>- <p><%= ["education.end_date"] %></p></p>
+  <p><%= education["details"] %></p>
+<% end %>
+
+<h3>Skills</h3>
+<% @skills.each do |skill| %>
+  <h4><%= skill["name"] %></h4>
+<% end %>
+
+<h3>Capstone</h3>
+<% @capstones.each do |capstone| %>
+  <img src="<%= capstone["screenshot"] %>" />
+  <h4><%= capstone["name"] %></h4>
+  <p><%= capstone["url"] %></p>
+  <p><%= capstone.["description"] %></p>
+<% end %>
+
+
+
+
+
+
+
+
