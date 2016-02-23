@@ -13,3 +13,38 @@
  *= require_tree .
  *= require_self
  */
+
+
+div.twitter-container{
+  width: 1000px;
+  height: 90px;
+  border: 2px solid #F5F8FA;
+  padding: 5px;
+  background-color: white;
+}
+
+
+div.icon {
+  display: inline-block;
+  margin-left: 15px;
+  color: #AAB8C2;
+}
+
+div.header {
+  color: #AAB8C2;
+  display: inline-block;
+}
+
+p.handle {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+
+
+
+

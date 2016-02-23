@@ -11,6 +11,9 @@ class StudentsController < ApplicationController
     @skills = @student["skills"]
     @capstones = @student["capstones"]
 
+
+    
+
   end
 
 end

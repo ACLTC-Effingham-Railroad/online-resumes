@@ -1,0 +1,20 @@
+
+  <% @tweets.each do |tweet| %>
+    <div class="twitter-container">
+      <p class="handle"><strong><%= @user.name %> </strong>
+      <div class="header"> @<%= @user.screen_name %> -<%= tweet.created_at.strftime("%e %b %Y") %></p>
+      </div>
+      <p><%= tweet.text %></p>
+      <p>
+      
+      <div class="icon">
+        <span class="glyphicon glyphicon-retweet"></span> <%= tweet.retweet_count %>
+      </div>
+
+      <div class="icon">
+      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> <%= tweet.favorite_count %>
+      </div>
+
+      <p>
+    </div>
+  <% end %>
